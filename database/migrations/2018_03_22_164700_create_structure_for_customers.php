@@ -22,7 +22,7 @@ class CreateStructureForCustomers extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Customers', 'icon' => 'address-book', 'link' => 'customers.index', 'has_children' => false,
+        'name' => 'Customers', 'icon' => 'address-book', 'link' => 'customers.index', 'order' => 999, 'has_children' => false,
     ];
 
 }

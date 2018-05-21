@@ -22,7 +22,7 @@ class CreateStructureForWorkOrders extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Work Orders', 'icon' => 'tasks', 'link' => 'workorders.index', 'has_children' => false,
+        'name' => 'Work Orders', 'icon' => 'tasks', 'link' => 'workorders.index', 'order' => 999, 'has_children' => false,
     ];
 
 }

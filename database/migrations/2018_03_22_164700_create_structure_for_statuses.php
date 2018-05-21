@@ -22,7 +22,7 @@ class CreateStructureForStatuses extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Statuses', 'icon' => 'list', 'link' => 'statuses.index', 'has_children' => false,
+        'name' => 'Statuses', 'icon' => 'list', 'link' => 'statuses.index', 'order' => 999, 'has_children' => false,
     ];
 
 }

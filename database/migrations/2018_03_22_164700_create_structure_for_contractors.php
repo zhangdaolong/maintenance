@@ -22,7 +22,7 @@ class CreateStructureForContractors extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Contractors', 'icon' => 'address-book', 'link' => 'contractors.index', 'has_children' => false,
+        'name' => 'Contractors', 'icon' => 'address-book', 'link' => 'contractors.index', 'order' => 999, 'has_children' => false,
     ];
 
 }

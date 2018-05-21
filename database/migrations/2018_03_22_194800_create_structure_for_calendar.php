@@ -22,7 +22,7 @@ class CreateStructureForCalendar extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Calendar', 'icon' => 'calendar', 'link' => 'calendar.index', 'has_children' => false,
+        'name' => 'Calendar', 'icon' => 'calendar', 'link' => 'calendar.index', 'order' => 999,  'has_children' => false,
     ];
 
 }

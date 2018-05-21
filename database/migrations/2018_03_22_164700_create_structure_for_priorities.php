@@ -22,7 +22,7 @@ class CreateStructureForPriorities extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Priorities', 'icon' => 'list', 'link' => 'priorities.index', 'has_children' => false,
+        'name' => 'Priorities', 'icon' => 'list', 'link' => 'priorities.index', 'order' => 999, 'has_children' => false,
     ];
 
 }
