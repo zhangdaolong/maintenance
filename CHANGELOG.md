@@ -1,5 +1,34 @@
 ## Laravel Enso's Changelog
 
+### 2.7.4
+- adds temporary link generation to Documents. To use this feature do the following steps:
+    - run `php artisan enso:update-documents-permissions`
+    - and after attach the desired roles to the new `core.documents.link` permission
+    - you also have to add to the `documents.php` config file the new `linkExpiration` option
+    - make sure that you have the lastest `app/Http/Kernel.php` file, or add `'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,` to the `protected $routeMiddleware` array
+- fixes localisation in auth views
+- adds `disable-clear` prop to vue-select
+- in structuremanager the created / deletion is wrapped now in transactions; adds generic exception when attribute validation in not passed
+- removes the old and unused `config/enso/labels.php`. Make sure that you seach your whole project for `config('enso.labels` and clean everything up.
+
+### 2.7.3
+- the new structuremanager has now validations for all properties.
+- all the tests are updated to use the new `ownerModel` option from the config.
+
+Upgrade instructions:
+- be sure that every `create_structure_migration` in your project that creates a menu has in the menu array the `order` key. You can default it to 999.
+
+### 2.7.2
+- refines the `Responsable` implementation
+- adds `config('enso.config.ownerModel')` option to the config. By default it point to `App\Owner` class
+- updates all the packages to use the new `ownerModel` option in config
+- refactors the structuremanager package
+- fixes a bug in tutorial.vue
+
+Upgrade instructions:
+
+- Copy from a fresh project the 'app\Http\Controllers\ChartController.php'. Copy the `resources/assets/js/pages/dashboard/Index.vue` component as well, if you didn't already for v2.7.1. Sorry about that, but what I did to the poor charts was an abomination and I had to roll it back.
+
 ### 2.7.1
 - implements `Responsable` contract in the whole project
 - refactors the BE
@@ -7,14 +36,14 @@
 Upgrade instructions and detailed changes:
 
 #### Enso
-    - renamed the `DashboardController` to `ChartController` and shortened all the routes / methods names for charts. Copy from a fresh project the 'app\Http\Controllers\ChartController.php' and remove the old `DashboardController.php`
+    - renamed the `DashboardController` to `ChartController` and shortened all the routes / methods names for charts. Copy from a fresh project the 'app\Http\Controllers\ChartController.php' and remove the old `DashboardController.php`. Copy the `resources/assets/js/pages/dashboard/Index/vue` component as well.
     - update the `routes/api.php` to reflect the changes. Check `api.php` from a fresh project to see the exact changes.
     - update requirement in composer.json: "laravel-enso/core": "2.7.*",
     - update requirement in composer.json: "laravel-enso/charts": "2.3.*",
 
 #### Core
-    - run `php artisan enso:clear-permissions'
-    - publish the new preferences.json from the core package
+    - run `php artisan enso:clear-preferences'
+    - publish the new preferences.json from the core package (with --force)
     
 #### Charts
     - Charts implements now the `Responsable` contract. You don't need to call `get()` anymore in your controller
