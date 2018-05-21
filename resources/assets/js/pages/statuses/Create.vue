@@ -1,14 +1,9 @@
 <template>
-<div>
-    <div class="columns is-centered">
-        <div class="column is-three-quarters">
-            <vue-form-ss class="box animated fadeIn"
-                :params="[$route.name, $route.params.id, false]"
-                ref="form">
-            </vue-form-ss>
-        </div>
+<div class="columns is-centered">
+    <div class="column is-three-quarters">
+        <vue-form-ss class="box animated fadeIn"
+                     :route-params="[$route.name, null, false]"/>
     </div>
-
 </div>
 </template>
 

@@ -3,15 +3,14 @@
     <div class="columns is-centered">
         <div class="column is-three-quarters">
             <vue-form-ss class="box animated fadeIn"
-                :params="[$route.name, $route.params.id, false]"
-                ref="form">
+                         :route-params="[$route.name, null, false]"/>
                 <template slot="customer_id" slot-scope="{ field, errors }">
                     <vue-select v-model="field.value"
                         :has-error="errors.has(field.name)"
                         @input="errors.clear(field.name)"
                         :source="field.meta.source">
                     </vue-select>
-		</template>
+                </template>
                 <template slot="contractor_id" slot-scope="{ field, errors }">
                     <vue-select v-model="field.value"
                         :has-error="errors.has(field.name)"
