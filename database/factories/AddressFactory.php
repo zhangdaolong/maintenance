@@ -12,8 +12,6 @@
  */
 
  $factory->define(LaravelEnso\AddressesManager\app\Models\Address::class, function (Faker\Generator $faker) {
-
-
      return [
         'addressable_type' => "App\WorkOrder",
         'addressable_id' => $faker->randomElement(\App\WorkOrder::pluck('id')->toArray()),
