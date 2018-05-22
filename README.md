@@ -5,7 +5,7 @@
 * Laravel SPA project with boilerplate and extra functionality out of the box for property services industry
 
 &nbsp;
-
+[![StyleCI](https://github.styleci.io/repos/133564056/shield?branch=master)](https://github.styleci.io/repos/133564056)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/curtisdelicata/cmms/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/build.png?b=master)](https://scrutinizer-ci.com/g/curtisdelicata/cmms/build-status/master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
