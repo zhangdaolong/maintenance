@@ -12,17 +12,15 @@
  */
 
 $factory->define(App\WorkOrder::class, function (Faker\Generator $faker) {
-
     return [
         'subject' => $faker->sentence,
         'description' => $faker->text,
         'created_at' => $faker->dateTimeBetween($startDate = '-5 years', $endDate = 'now'),
         'scheduled' => $faker->dateTimeBetween($startDate = '-5 years', $endDate = 'now'),
-	'customer_id' => $faker->randomElement(\App\Customer::pluck('id')->toArray()),
-	'contractor_id' => $faker->randomElement(\App\Contractor::pluck('id')->toArray()),
-	'status_id' => $faker->randomElement(\App\Status::pluck('id')->toArray()),
-	'priority_id' => $faker->randomElement(\App\Priority::pluck('id')->toArray()),
-	'is_active' => $faker->boolean,
+    'customer_id' => $faker->randomElement(\App\Customer::pluck('id')->toArray()),
+    'contractor_id' => $faker->randomElement(\App\Contractor::pluck('id')->toArray()),
+    'status_id' => $faker->randomElement(\App\Status::pluck('id')->toArray()),
+    'priority_id' => $faker->randomElement(\App\Priority::pluck('id')->toArray()),
+    'is_active' => $faker->boolean,
     ];
 });
-

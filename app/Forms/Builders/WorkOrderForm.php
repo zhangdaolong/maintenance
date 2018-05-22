@@ -23,7 +23,6 @@ class WorkOrderForm
 
     public function edit(WorkOrder $workorder)
     {
-
         return $this->form->edit($workorder);
     }
 }

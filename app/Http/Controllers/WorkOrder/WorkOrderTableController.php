@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\WorkOrder;
 
-use App\Tables\Builders\WorkOrderTable;
 use App\Http\Controllers\Controller;
+use App\Tables\Builders\WorkOrderTable;
 use LaravelEnso\VueDatatable\app\Traits\Excel;
 use LaravelEnso\VueDatatable\app\Traits\Datatable;
 

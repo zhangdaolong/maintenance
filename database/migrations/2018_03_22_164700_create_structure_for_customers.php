@@ -14,7 +14,7 @@ class CreateStructureForCustomers extends StructureMigration
         ['name' => 'customers.initTable', 'description' => 'Init table for customers', 'type' => 0, 'default' => false],
         ['name' => 'customers.getTableData', 'description' => 'Get table data for customers', 'type' => 0, 'default' => false],
         ['name' => 'customers.exportExcel', 'description' => 'Export excel for customers', 'type' => 0, 'default' => false],
-	['name' => 'customers.selectOptions', 'description' => 'Get customers list for vue select', 'type' => 0, 'default' => false],
+    ['name' => 'customers.selectOptions', 'description' => 'Get customers list for vue select', 'type' => 0, 'default' => false],
     ];
 
     protected $permissionGroup = [
@@ -24,6 +24,4 @@ class CreateStructureForCustomers extends StructureMigration
     protected $menu = [
         'name' => 'Customers', 'icon' => 'address-book', 'link' => 'customers.index', 'order' => 999, 'has_children' => false,
     ];
-
 }
-

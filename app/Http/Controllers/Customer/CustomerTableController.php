@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Customer;
 
-use App\Tables\Builders\CustomerTable;
 use App\Http\Controllers\Controller;
+use App\Tables\Builders\CustomerTable;
 use LaravelEnso\VueDatatable\app\Traits\Excel;
 use LaravelEnso\VueDatatable\app\Traits\Datatable;
 

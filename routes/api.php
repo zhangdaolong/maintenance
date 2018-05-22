@@ -71,7 +71,6 @@ Route::middleware(['auth', 'core'])
 
 Route::middleware(['auth', 'core'])
     ->group(function () {
-
         Route::namespace('Contractor')
             ->prefix('contractors')->as('contractors.')
             ->group(function () {
@@ -146,5 +145,4 @@ Route::middleware(['auth', 'core'])
             });
 
         Route::resource('workorders', 'WorkOrder\WorkOrderController');
-
     });

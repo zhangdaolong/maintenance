@@ -14,7 +14,7 @@ class CreateStructureForCalendar extends StructureMigration
         ['name' => 'calendar.initTable', 'description' => 'Init table for calendar', 'type' => 0, 'default' => false],
         ['name' => 'calendar.getTableData', 'description' => 'Get table data for calendar', 'type' => 0, 'default' => false],
         ['name' => 'calendar.exportExcel', 'description' => 'Export excel for calendar', 'type' => 0, 'default' => false],
-	['name' => 'calendar.selectOptions', 'description' => 'Get calendar list for vue select', 'type' => 0, 'default' => false],
+    ['name' => 'calendar.selectOptions', 'description' => 'Get calendar list for vue select', 'type' => 0, 'default' => false],
     ];
 
     protected $permissionGroup = [
@@ -24,6 +24,4 @@ class CreateStructureForCalendar extends StructureMigration
     protected $menu = [
         'name' => 'Calendar', 'icon' => 'calendar', 'link' => 'calendar.index', 'order' => 999,  'has_children' => false,
     ];
-
 }
-
