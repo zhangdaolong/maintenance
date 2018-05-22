@@ -10,10 +10,9 @@
 | database. Just tell the factory how a default model should look.
 |
  */
-use App\User;
+ use App\User;
 
-
-$factory->define(LaravelEnso\AddressesManager\app\Models\Address::class, function (Faker\Generator $faker) {
+ $factory->define(LaravelEnso\AddressesManager\app\Models\Address::class, function (Faker\Generator $faker) {
 
 $user = User::find(1);
 Auth::login($user);
