@@ -6,6 +6,10 @@
 
 &nbsp;
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/curtisdelicata/cmms/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/build.png?b=master)](https://scrutinizer-ci.com/g/curtisdelicata/cmms/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+
 ### Important
 
 This is under development and it is not intended to be used in a production environment yet.
