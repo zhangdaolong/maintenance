@@ -1,18 +1,19 @@
 <?php
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 /**
- * Class CreateUsersTable
+ * Class CreateUsersTable.
  */
 class CreateAccountingJournalsTable extends Migration
 {
-	/**
-	 * @var array
-	 */
-	protected $guarded = ['id'];
-	
+    /**
+     * @var array
+     */
+    protected $guarded = ['id'];
+
     /**
      * Run the migrations.
      *
@@ -23,12 +24,13 @@ class CreateAccountingJournalsTable extends Migration
         Schema::create('accounting_journals', function (Blueprint $table) {
             $table->increments('id');
             $table->bigInteger('balance');
-            $table->char('currency',5);
-	        $table->char('morphed_type',32);
-	        $table->integer('morphed_id');
+            $table->char('currency', 5);
+            $table->char('morphed_type', 32);
+            $table->integer('morphed_id');
             $table->timestamps();
         });
     }
+
     /**
      * Reverse the migrations.
      *
