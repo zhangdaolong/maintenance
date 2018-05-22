@@ -23,7 +23,6 @@ class CustomerForm
 
     public function edit(Customer $customer)
     {
-
         return $this->form->edit($customer);
     }
 }

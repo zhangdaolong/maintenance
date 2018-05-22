@@ -23,7 +23,6 @@ class PriorityForm
 
     public function edit(Priority $priority)
     {
-
         return $this->form->edit($priority);
     }
 }

@@ -12,12 +12,10 @@
  */
 
 $factory->define(App\Customer::class, function (Faker\Generator $faker) {
-
     return [
         'name' => $faker->name,
         'description' => $faker->text,
         'created_at' => $faker->dateTimeBetween($startDate = '-5 years', $endDate = 'now'),
-	'is_active' => $faker->boolean,
+    'is_active' => $faker->boolean,
     ];
 });
-

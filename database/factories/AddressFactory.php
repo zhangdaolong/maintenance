@@ -13,11 +13,10 @@
  use App\User;
 
  $factory->define(LaravelEnso\AddressesManager\app\Models\Address::class, function (Faker\Generator $faker) {
+     $user = User::find(1);
+     Auth::login($user);
 
-$user = User::find(1);
-Auth::login($user);
-
- return [
+     return [
         'addressable_type' => "App\WorkOrder",
         'addressable_id' => $faker->randomElement(\App\WorkOrder::pluck('id')->toArray()),
         'street' => $faker->name,
@@ -28,5 +27,4 @@ Auth::login($user);
         'country_id' => 235,
         'created_by' => 1,
     ];
-});
-
+ });

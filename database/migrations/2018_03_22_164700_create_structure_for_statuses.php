@@ -14,7 +14,7 @@ class CreateStructureForStatuses extends StructureMigration
         ['name' => 'statuses.initTable', 'description' => 'Init table for statuses', 'type' => 0, 'default' => false],
         ['name' => 'statuses.getTableData', 'description' => 'Get table data for statuses', 'type' => 0, 'default' => false],
         ['name' => 'statuses.exportExcel', 'description' => 'Export excel for statuses', 'type' => 0, 'default' => false],
-	['name' => 'statuses.selectOptions', 'description' => 'Get statuses list for vue select', 'type' => 0, 'default' => false],
+    ['name' => 'statuses.selectOptions', 'description' => 'Get statuses list for vue select', 'type' => 0, 'default' => false],
     ];
 
     protected $permissionGroup = [
@@ -24,6 +24,4 @@ class CreateStructureForStatuses extends StructureMigration
     protected $menu = [
         'name' => 'Statuses', 'icon' => 'list', 'link' => 'statuses.index', 'order' => 999, 'has_children' => false,
     ];
-
 }
-

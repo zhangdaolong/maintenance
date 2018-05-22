@@ -14,7 +14,7 @@ class CreateStructureForContractors extends StructureMigration
         ['name' => 'contractors.initTable', 'description' => 'Init table for contractors', 'type' => 0, 'default' => false],
         ['name' => 'contractors.getTableData', 'description' => 'Get table data for contractors', 'type' => 0, 'default' => false],
         ['name' => 'contractors.exportExcel', 'description' => 'Export excel for contractors', 'type' => 0, 'default' => false],
-	['name' => 'contractors.selectOptions', 'description' => 'Get contractors list for vue select', 'type' => 0, 'default' => false],
+    ['name' => 'contractors.selectOptions', 'description' => 'Get contractors list for vue select', 'type' => 0, 'default' => false],
     ];
 
     protected $permissionGroup = [
@@ -24,6 +24,4 @@ class CreateStructureForContractors extends StructureMigration
     protected $menu = [
         'name' => 'Contractors', 'icon' => 'address-book', 'link' => 'contractors.index', 'order' => 999, 'has_children' => false,
     ];
-
 }
-

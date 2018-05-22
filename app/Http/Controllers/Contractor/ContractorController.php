@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Contractor;
 
 use App\Contractor;
-use App\Forms\Builders\ContractorForm;
 use App\Http\Controllers\Controller;
+use App\Forms\Builders\ContractorForm;
 use App\Http\Requests\ValidateContractorRequest;
 use LaravelEnso\Core\app\Classes\ProfileBuilder;
 
 class ContractorController extends Controller
 {
-
     public function create(ContractorForm $form)
     {
         return ['form' => $form->create()];
@@ -19,7 +18,6 @@ class ContractorController extends Controller
     public function store(ValidateContractorRequest $request)
     {
         $contractor = Contractor::create($request->all());
-
 
         return [
             'message' => __('The contractor was created!'),
