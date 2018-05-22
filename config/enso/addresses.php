@@ -3,6 +3,7 @@
 return [
     'addressables' => [
         'owner' => App\Owner::class,
+        'workorder' => App\WorkOrder::class,
     ],
     'streetTypes' => [
         'Street' => 'Street',

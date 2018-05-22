@@ -7,5 +7,6 @@ return [
     'imageHeight' => 2048,
     'documentables' => [
         'owner' => App\Owner::class,
+        'workorder' => App\WorkOrder::class,
     ],
 ];
