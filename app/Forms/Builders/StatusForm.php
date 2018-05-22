@@ -23,7 +23,6 @@ class StatusForm
 
     public function edit(Status $status)
     {
-
         return $this->form->edit($status);
     }
 }

@@ -14,7 +14,7 @@ class CreateStructureForPriorities extends StructureMigration
         ['name' => 'priorities.initTable', 'description' => 'Init table for priorities', 'type' => 0, 'default' => false],
         ['name' => 'priorities.getTableData', 'description' => 'Get table data for priorities', 'type' => 0, 'default' => false],
         ['name' => 'priorities.exportExcel', 'description' => 'Export excel for priorities', 'type' => 0, 'default' => false],
-	['name' => 'priorities.selectOptions', 'description' => 'Get priorities list for vue select', 'type' => 0, 'default' => false],
+    ['name' => 'priorities.selectOptions', 'description' => 'Get priorities list for vue select', 'type' => 0, 'default' => false],
     ];
 
     protected $permissionGroup = [
@@ -24,6 +24,4 @@ class CreateStructureForPriorities extends StructureMigration
     protected $menu = [
         'name' => 'Priorities', 'icon' => 'list', 'link' => 'priorities.index', 'order' => 999, 'has_children' => false,
     ];
-
 }
-

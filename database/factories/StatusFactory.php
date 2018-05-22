@@ -12,10 +12,8 @@
  */
 
 $factory->define(App\Status::class, function (Faker\Generator $faker) {
-
     return [
         'name' => $faker->word,
         'color' => $faker->hexcolor,
     ];
 });
-

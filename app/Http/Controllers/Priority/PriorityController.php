@@ -9,7 +9,6 @@ use App\Http\Requests\ValidatePriorityRequest;
 
 class PriorityController extends Controller
 {
-
     public function create(PriorityForm $form)
     {
         return ['form' => $form->create()];

@@ -23,7 +23,6 @@ class ContractorForm
 
     public function edit(Contractor $contractor)
     {
-
         return $this->form->edit($contractor);
     }
 }

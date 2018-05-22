@@ -9,7 +9,6 @@ use App\Http\Requests\ValidateStatusRequest;
 
 class StatusController extends Controller
 {
-
     public function create(StatusForm $form)
     {
         return ['form' => $form->create()];

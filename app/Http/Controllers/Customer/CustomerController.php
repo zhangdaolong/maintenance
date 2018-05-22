@@ -10,7 +10,6 @@ use LaravelEnso\Core\app\Classes\ProfileBuilder;
 
 class CustomerController extends Controller
 {
-
     public function create(CustomerForm $form)
     {
         return ['form' => $form->create()];
