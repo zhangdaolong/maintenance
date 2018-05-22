@@ -3,9 +3,9 @@
     <div class="columns is-centered">
         <div class="column is-three-quarters animated fadeIn">
             <vue-form-ss class="box animated fadeIn"
-                :params="[$route.name, $route.params.id, false]"
-                @loaded="initialised = true"
-                ref="form">
+                         :route-params="[$route.name, $route.params.id, false]"
+                         @loaded="initialised = true"
+                         ref="form"/>
                 <template slot="customer_id" slot-scope="{ field, errors }">
                     <vue-select v-model="field.value"
                         :has-error="errors.has(field.name)"
