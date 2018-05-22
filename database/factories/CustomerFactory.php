@@ -13,9 +13,11 @@
 
 $factory->define(App\Customer::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
+        'name' => $faker->firstName . ' ' . $faker->lastName,
         'description' => $faker->text,
+        'phone' => $faker->phoneNumber,
+        'email' => $faker->unique()->safeEmail,
         'created_at' => $faker->dateTimeBetween($startDate = '-5 years', $endDate = 'now'),
-    'is_active' => $faker->boolean,
+        'is_active' => $faker->boolean,
     ];
 });
