@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e1f2b473332dbd2319915ad7b16e019",
+    "content-hash": "7e83603b8943918d9616db7b545a225f",
     "packages": [
         {
             "name": "box/spout",
@@ -1245,16 +1245,16 @@
         },
         {
             "name": "laravel-enso/addressesmanager",
-            "version": "2.2.24",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-enso/AddressesManager.git",
-                "reference": "4976477428137fc6724ba7c364c2eeb18f7be8e8"
+                "reference": "bf5e222b56a0105f4c16fce58229faf33da0cdec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-enso/AddressesManager/zipball/4976477428137fc6724ba7c364c2eeb18f7be8e8",
-                "reference": "4976477428137fc6724ba7c364c2eeb18f7be8e8",
+                "url": "https://api.github.com/repos/laravel-enso/AddressesManager/zipball/bf5e222b56a0105f4c16fce58229faf33da0cdec",
+                "reference": "bf5e222b56a0105f4c16fce58229faf33da0cdec",
                 "shasum": ""
             },
             "require": {
@@ -1304,7 +1304,7 @@
                 "laravel-enso",
                 "manager"
             ],
-            "time": "2018-05-14T10:35:35+00:00"
+            "time": "2018-05-22T09:23:25+00:00"
         },
         {
             "name": "laravel-enso/avatarmanager",
@@ -3655,16 +3655,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.3",
+            "version": "v0.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4"
+                "reference": "4d969a0e08e1e05e7207c07cb4207017ecc9a331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/79c280013cf0b30fa23f3ba8bd3649218075adf4",
-                "reference": "79c280013cf0b30fa23f3ba8bd3649218075adf4",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4d969a0e08e1e05e7207c07cb4207017ecc9a331",
+                "reference": "4d969a0e08e1e05e7207c07cb4207017ecc9a331",
                 "shasum": ""
             },
             "require": {
@@ -3676,9 +3676,9 @@
                 "symfony/var-dumper": "~2.7|~3.0|~4.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.2",
                 "hoa/console": "~2.15|~3.16",
-                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0",
-                "symfony/finder": "~2.1|~3.0|~4.0"
+                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -3723,7 +3723,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2018-04-18T12:32:50+00:00"
+            "time": "2018-05-22T06:48:07+00:00"
         },
         {
             "name": "pusher/pusher-php-server",
