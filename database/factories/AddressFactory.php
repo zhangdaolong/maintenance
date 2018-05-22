@@ -10,11 +10,9 @@
 | database. Just tell the factory how a default model should look.
 |
  */
- use App\User;
 
  $factory->define(LaravelEnso\AddressesManager\app\Models\Address::class, function (Faker\Generator $faker) {
-     $user = User::find(1);
-     Auth::login($user);
+
 
      return [
         'addressable_type' => "App\WorkOrder",
@@ -25,6 +23,5 @@
         'postal_area' => $faker->postcode,
         'city' => $faker->city,
         'country_id' => 235,
-        'created_by' => 1,
     ];
  });
