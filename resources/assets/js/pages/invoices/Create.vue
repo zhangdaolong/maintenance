@@ -7,7 +7,7 @@
                 <template slot="customer_id" slot-scope="{ field, errors }">
                     <vue-select v-model="field.value"
                                 :has-error="errors.has(field.name)"
-                                @input="pivotParams.owners.id=$event;errors.clear(field.name)"
+                                @input="pivotParams.customers.id=$event;errors.clear(field.name)"
                                 :source="field.meta.source"/>
                 </template>
                 <template slot="status_id" slot-scope="{ field, errors }">

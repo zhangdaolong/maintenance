@@ -11,7 +11,14 @@
       "label": "Amount",
       "name": "amount",
       "data": "invoices.amount",
-      "meta": [ "searchable", "sortable" ]
+      "meta": [ "searchable", "sortable", "total" ],
+      "money": {
+        "symbol": "£",
+        "decimal": ".",
+        "thousand": ",",
+        "precision": 2,
+        "format": "%s%v"
+      }
     },
     {
       "label": "Customer",
@@ -20,9 +27,15 @@
       "meta": [ "searchable", "sortable" ]
     },
     {
+      "label": "Created",
+      "name": "created_at",
+      "data": "invoices.created_at",
+      "meta": [ "searchable", "sortable", "date" ]
+    },
+    {
       "label": "Active",
       "name": "is_active",
-      "data": "owners.is_active",
+      "data": "invoices.is_active",
       "meta": [ "boolean" ]
     }
   ]

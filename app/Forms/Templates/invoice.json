@@ -5,12 +5,21 @@
     "fields": [{
       "label": "Amount",
       "name": "amount",
-      "value": null,
+      "value": 100.00,
+
       "meta": {
         "type": "input",
-        "content": "number"
-      }
-    }, {
+        "content": "money",
+        "symbol": "GBP",
+        "precision": "3",
+        "thousand": " ",
+        "decimal": ",",
+        "positive": "%s %v",
+        "negative": "%s (%v)",
+        "zero": "%s --"
+        }
+
+      }, {
       "label": "Customer",
       "name": "customer_id",
       "value": null,
