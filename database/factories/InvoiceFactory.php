@@ -13,7 +13,7 @@
 
 $factory->define(App\Invoice::class, function (Faker\Generator $faker) {
     return [
-        'amount' => $faker->numberBetween($min = 1,$max = 9999),
+        'amount' => $faker->numberBetween($min = 1, $max = 9999),
         'created_at' => $faker->dateTimeBetween($startDate = '-5 years', $endDate = 'now'),
         'customer_id' => $faker->randomElement(\App\Customer::pluck('id')->toArray()),
         'status_id' => $faker->randomElement(\App\Status::pluck('id')->toArray()),
