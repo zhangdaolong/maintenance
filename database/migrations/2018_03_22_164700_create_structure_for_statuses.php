@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use LaravelEnso\StructureManager\app\Classes\StructureMigration;
 

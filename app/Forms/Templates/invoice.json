@@ -1,0 +1,45 @@
+{
+  "routePrefix": "invoices",
+  "sections": [{
+    "columns": "2",
+    "fields": [{
+      "label": "Amount",
+      "name": "amount",
+      "value": null,
+      "meta": {
+        "type": "input",
+        "content": "number"
+      }
+    }, {
+      "label": "Customer",
+      "name": "customer_id",
+      "value": null,
+      "meta": {
+        "custom": true,
+        "type": "select",
+        "multiple": false,
+        "options": [],
+        "source": "customers.selectOptions"
+      }
+    }, {
+      "label": "Status",
+      "name": "status_id",
+      "value": null,
+      "meta": {
+        "custom": true,
+        "type": "select",
+        "multiple": false,
+        "options": [],
+        "source": "statuses.selectOptions"
+      }
+    }, {
+      "label": "Active",
+      "name": "is_active",
+      "value": true,
+      "meta": {
+        "type": "input",
+        "content": "checkbox"
+      }
+    }]
+  }]
+}

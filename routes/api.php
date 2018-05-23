@@ -101,6 +101,21 @@ Route::middleware(['auth', 'core'])
 
         Route::resource('customers', 'Customer\CustomerController');
 
+        Route::namespace('Invoice')
+            ->prefix('invoices')->as('invoices.')
+            ->group(function () {
+                Route::get('initTable', 'InvoiceTableController@init')
+                    ->name('initTable');
+                Route::get('getTableData', 'InvoiceTableController@data')
+                    ->name('getTableData');
+                Route::get('exportExcel', 'InvoiceTableController@excel')
+                    ->name('exportExcel');
+                Route::get('selectOptions', 'InvoiceSelectController@options')
+                    ->name('selectOptions');
+            });
+
+        Route::resource('invoices', 'Invoice\InvoiceController');
+
         Route::namespace('Priority')
             ->prefix('priorities')->as('priorities.')
             ->group(function () {

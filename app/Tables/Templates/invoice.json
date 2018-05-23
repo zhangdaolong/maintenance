@@ -1,0 +1,29 @@
+{
+  "routePrefix": "invoices",
+  "readSuffix": "getTableData",
+  "writeSuffix": null,
+  "name": "Invoices",
+  "icon": "list-alt",
+  "crtNo": true,
+  "buttons": ["excel", "create", "edit", "destroy"],
+  "columns": [
+    {
+      "label": "Amount",
+      "name": "amount",
+      "data": "invoices.amount",
+      "meta": [ "searchable", "sortable" ]
+    },
+    {
+      "label": "Customer",
+      "name": "customer",
+      "data": "customers.name",
+      "meta": [ "searchable", "sortable" ]
+    },
+    {
+      "label": "Active",
+      "name": "is_active",
+      "data": "owners.is_active",
+      "meta": [ "boolean" ]
+    }
+  ]
+}
