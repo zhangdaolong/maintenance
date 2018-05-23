@@ -13,7 +13,7 @@
 
 $factory->define(App\Customer::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->firstName . ' ' . $faker->lastName,
+        'name' => $faker->firstName.' '.$faker->lastName,
         'description' => $faker->text,
         'phone' => $faker->phoneNumber,
         'email' => $faker->unique()->safeEmail,

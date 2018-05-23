@@ -1,18 +1,19 @@
 <?php
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 /**
- * Class CreateUsersTable
+ * Class CreateUsersTable.
  */
 class CreateAccountingJournalTransactionsTable extends Migration
 {
-	/**
-	 * @var array
-	 */
-	protected $guarded = ['id'];
-	
+    /**
+     * @var array
+     */
+    protected $guarded = ['id'];
+
     /**
      * Run the migrations.
      *
@@ -25,15 +26,16 @@ class CreateAccountingJournalTransactionsTable extends Migration
             $table->integer('journal_id');
             $table->bigInteger('debit')->nullable();
             $table->bigInteger('credit')->nullable();
-            $table->char('currency',5);
-	        $table->text('memo')->nullable();
-	        $table->char('ref_class',32)->nullable();
-	        $table->integer('ref_class_id')->nullable();
-	        $table->timestamp('post_date');
+            $table->char('currency', 5);
+            $table->text('memo')->nullable();
+            $table->char('ref_class', 32)->nullable();
+            $table->integer('ref_class_id')->nullable();
+            $table->timestamp('post_date');
             $table->timestamps();
             $table->softDeletes();
         });
     }
+
     /**
      * Reverse the migrations.
      *
