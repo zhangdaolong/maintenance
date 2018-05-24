@@ -36,6 +36,6 @@ services:
      ports:
        - "8080:8080"
      volumes:
-      - .:/app:cached
+      - ./:/app:cached
      depends_on:
       - cmms-server
