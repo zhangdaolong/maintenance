@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Invoice;
 
 use App\Invoice;
-use App\Http\Controllers\Controller;
 use App\Forms\Builders\InvoiceForm;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\ValidateInvoiceRequest;
 
 class InvoiceController extends Controller
