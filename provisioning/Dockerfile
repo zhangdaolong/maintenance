@@ -22,7 +22,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Installing node & npm
 RUN curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
 RUN bash install_nvm.sh
-RUN nvm install 6.9.2
+RUN bash nvm install 6.9.2
 
 # Setting locales
 RUN echo en_GB.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
