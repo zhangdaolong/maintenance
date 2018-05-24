@@ -30,7 +30,7 @@ services:
     depends_on:
       - cmms-server
 
-   node:
+  node:
      image: node
      working_dir: /app
      ports:
