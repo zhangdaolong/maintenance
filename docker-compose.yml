@@ -6,6 +6,7 @@ services:
     image: cmms
     depends_on:
       - mysql
+      - node
     volumes:
       - ./:/application:cached
 
@@ -28,3 +29,11 @@ services:
       - ./public:/application/public:cached
     depends_on:
       - cmms-server
+
+   node:
+     image: node
+     working_dir: /app
+     ports:
+       - 8080:8080
+     volumes:
+ - .:/app:cached
