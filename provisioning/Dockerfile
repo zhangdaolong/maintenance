@@ -19,6 +19,12 @@ RUN docker-php-ext-install pdo_mysql gd mbstring zip pcntl
 # Installing composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Installing node & npm
+RUN curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
+RUN bash install_nvm.sh
+RUN source ~/.profile
+RUN nvm install 6.9.2
+
 # Setting locales
 RUN echo en_GB.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
 
