@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb964cb61dc158d8cc20132b6cde2170",
+    "content-hash": "fc24b685b8b07aaaf4be803e8df3b860",
     "packages": [
         {
             "name": "box/spout",
@@ -3857,6 +3857,53 @@
                 "trigger"
             ],
             "time": "2018-05-21T13:25:35+00:00"
+        },
+        {
+            "name": "quickbooks/v3-php-sdk",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/intuit/QuickBooks-V3-PHP-SDK.git",
+                "reference": "c69c8811e3dd824af8a00167ec0f1efaab813c1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/intuit/QuickBooks-V3-PHP-SDK/zipball/c69c8811e3dd824af8a00167ec0f1efaab813c1f",
+                "reference": "c69c8811e3dd824af8a00167ec0f1efaab813c1f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "QuickBooksOnline\\API\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "hlu2",
+                    "email": "Hao_Lu@intuit.com"
+                }
+            ],
+            "description": "The Official PHP SDK for QuickBooks Online Accounting API",
+            "homepage": "http://developer.intuit.com",
+            "keywords": [
+                "api",
+                "http",
+                "quickbooks",
+                "rest",
+                "smallbusiness"
+            ],
+            "time": "2018-05-02T22:28:08+00:00"
         },
         {
             "name": "ramsey/uuid",
