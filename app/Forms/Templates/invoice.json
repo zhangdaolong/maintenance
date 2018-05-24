@@ -1,54 +1,114 @@
 {
+  "title": "Create invoice",
+  "icon": "location-arrow",
+  "method": null,
   "routePrefix": "invoices",
-  "sections": [{
-    "columns": "2",
-    "fields": [{
-      "label": "Amount",
-      "name": "amount",
-      "value": 100.00,
-
-      "meta": {
-        "type": "input",
-        "content": "money",
-        "symbol": "GBP",
-        "precision": "3",
-        "thousand": " ",
-        "decimal": ",",
-        "positive": "%s %v",
-        "negative": "%s (%v)",
-        "zero": "%s --"
+  "sections": [
+    {
+      "columns": 4,
+      "fields": [
+        {
+          "label": "Amount",
+          "name": "amount",
+          "value": 100.00,
+          "meta": {
+            "type": "input",
+            "content": "money",
+            "symbol": "GBP",
+            "precision": "3",
+            "thousand": " ",
+            "decimal": ",",
+            "positive": "%s %v",
+            "negative": "%s (%v)",
+            "zero": "%s --"
+          }
+        },
+        {
+          "label": "Active",
+          "name": "is_active",
+          "value": true,
+          "meta": {
+            "type": "input",
+            "content": "checkbox"
+          }
+        },
+        {
+          "label": "Customer",
+          "name": "customer_id",
+          "value": null,
+          "meta": {
+            "custom": true,
+            "type": "select",
+            "multiple": false,
+            "source": "customers.selectOptions",
+            "options": [],
+            "label": "label"
+          }
+        },
+        {
+          "label": "Status",
+          "name": "status_id",
+          "value": null,
+          "meta": {
+            "custom": true,
+            "type": "select",
+            "multiple": false,
+            "source": "statuses.selectOptions",
+            "options": [],
+            "label": "label"
+          }
         }
-
-      }, {
-      "label": "Customer",
-      "name": "customer_id",
-      "value": null,
-      "meta": {
-        "custom": true,
-        "type": "select",
-        "multiple": false,
-        "options": [],
-        "source": "customers.selectOptions"
-      }
-    }, {
-      "label": "Status",
-      "name": "status_id",
-      "value": null,
-      "meta": {
-        "custom": true,
-        "type": "select",
-        "multiple": false,
-        "options": [],
-        "source": "statuses.selectOptions"
-      }
-    }, {
-      "label": "Active",
-      "name": "is_active",
-      "value": true,
-      "meta": {
-        "type": "input",
-        "content": "checkbox"
-      }
-    }]
-  }]
+      ]
+    },
+    {
+      "columns": "custom",
+      "fields": [
+        {
+          "label": "Invoiced date",
+          "name": "invoiced_date",
+          "value": null,
+          "column": 3,
+          "meta": {
+            "custom": false,
+            "type": "datepicker",
+            "content": "date",
+            "disabled": false
+          }
+        }
+      ]
+    },
+    {
+      "columns": "custom",
+      "fields": [
+        {
+          "label": "Due date",
+          "name": "due_date",
+          "value": null,
+          "column": 3,
+          "meta": {
+            "custom": false,
+            "type": "datepicker",
+            "content": "date",
+            "disabled": false
+          }
+        }
+      ]
+    },
+    {
+      "columns": 2,
+      "fields": [
+        {
+          "label": "Description",
+          "name": "description",
+          "value": null,
+          "meta": {
+            "custom": false,
+            "type": "input",
+            "content": "text",
+            "placeholder": "Any comments go here"
+          }
+        }
+      ]
+    }
+  ]
 }

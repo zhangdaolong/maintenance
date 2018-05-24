@@ -12,7 +12,7 @@ class Invoice extends Model
 {
     use Commentable, Documentable, Addressable, AccountingJournal;
 
-    protected $fillable = ['customer_id', 'amount', 'is_active', 'status_id'];
+    protected $fillable = ['customer_id', 'amount', 'is_active', 'status_id', 'due_date', 'invoiced_date', 'description'];
 
     protected $dates = ['created_at'];
 
