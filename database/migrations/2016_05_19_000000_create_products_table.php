@@ -3,8 +3,16 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAccountingLedgersTable extends Migration
+/**
+ * Class CreateUsersTable
+ */
+class CreateProductsTable extends Migration
 {
+	/**
+	 * @var array
+	 */
+	protected $guarded = ['id'];
+	
     /**
      * Run the migrations.
      *
@@ -12,14 +20,13 @@ class CreateAccountingLedgersTable extends Migration
      */
     public function up()
     {
-        Schema::create('accounting_ledgers', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->enum('type', ['asset', 'liability', 'equity', 'income', 'expense']);
+            $table->float('price');
             $table->timestamps();
         });
     }
-    
     /**
      * Reverse the migrations.
      *
@@ -27,6 +34,6 @@ class CreateAccountingLedgersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('accounting_ledgers');
+        Schema::dropIfExists('products');
     }
 }

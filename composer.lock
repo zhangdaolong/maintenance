@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc24b685b8b07aaaf4be803e8df3b860",
+    "content-hash": "0052aa06cd18e7865134f41b92497ebd",
     "packages": [
         {
             "name": "box/spout",
@@ -3987,20 +3987,21 @@
         },
         {
             "name": "scottlaurent/accounting",
-            "version": "v0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scottlaurent/accounting.git",
-                "reference": "4af3424c88cbb4acef6032b12e231de46e8553bc"
+                "reference": "5cb070704fc89b79cdb56b06f1def8178e23dde3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scottlaurent/accounting/zipball/4af3424c88cbb4acef6032b12e231de46e8553bc",
-                "reference": "4af3424c88cbb4acef6032b12e231de46e8553bc",
+                "url": "https://api.github.com/repos/scottlaurent/accounting/zipball/5cb070704fc89b79cdb56b06f1def8178e23dde3",
+                "reference": "5cb070704fc89b79cdb56b06f1def8178e23dde3",
                 "shasum": ""
             },
             "require": {
-                "moneyphp/money": "^3.0"
+                "moneyphp/money": "^3.0",
+                "ramsey/uuid": "^3.7"
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.5",
@@ -4029,7 +4030,7 @@
                 "Accounting",
                 "laravel"
             ],
-            "time": "2017-05-31T01:03:55+00:00"
+            "time": "2017-11-30T01:42:22+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -7645,6 +7646,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "scottlaurent/accounting": 20,
         "laracasts/generators": 20
     },
     "prefer-stable": true,
