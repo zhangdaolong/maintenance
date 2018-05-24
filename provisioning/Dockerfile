@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     mysql-client \
     libpng-dev \
     locales \
-    zip
+    zip \
+    git-core
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
