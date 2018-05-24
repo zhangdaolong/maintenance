@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  cmms-server:
+    build: ./provisioning
+    image: cmms
+    depends_on:
+      - mysql
+    volumes:
+      - ./:/application:cached
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=homestead
+    volumes:
+      - ./storage/tmp/db:/var/lib/mysql:cached
+
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./provisioning/nginx.conf:/etc/nginx/conf.d/default.conf:cached
+      - ./public:/application/public:cached
+    depends_on:
+      - cmms-server
