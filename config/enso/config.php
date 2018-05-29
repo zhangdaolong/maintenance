@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'version' => '2.7.5',
+    'version' => '2.7.7',
+    'stateBuilder' => 'App\Classes\LocalState',
     'ownerModel' => 'App\Owner',
     'defaultRole' => 'admin',
     'phpDateFormat' => 'd-m-Y',

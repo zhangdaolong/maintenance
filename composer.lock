@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0052aa06cd18e7865134f41b92497ebd",
+    "content-hash": "7e83603b8943918d9616db7b545a225f",
     "packages": [
         {
             "name": "box/spout",
@@ -2827,16 +2827,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.23",
+            "version": "v5.6.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f547f0a71a12763d1adb8493237d541c9e3a5d10"
+                "reference": "637fd797a6dde8d24a9f07da77e375ec251c5d24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f547f0a71a12763d1adb8493237d541c9e3a5d10",
-                "reference": "f547f0a71a12763d1adb8493237d541c9e3a5d10",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/637fd797a6dde8d24a9f07da77e375ec251c5d24",
+                "reference": "637fd797a6dde8d24a9f07da77e375ec251c5d24",
                 "shasum": ""
             },
             "require": {
@@ -2962,7 +2962,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-05-22T14:55:57+00:00"
+            "time": "2018-05-15T13:34:20+00:00"
         },
         {
             "name": "laravel/horizon",
@@ -3178,86 +3178,6 @@
                 "storage"
             ],
             "time": "2018-05-07T08:44:23+00:00"
-        },
-        {
-            "name": "moneyphp/money",
-            "version": "v3.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moneyphp/money.git",
-                "reference": "5e6a3c98ba2cb190d48d35656967eacf30716034"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moneyphp/money/zipball/5e6a3c98ba2cb190d48d35656967eacf30716034",
-                "reference": "5e6a3c98ba2cb190d48d35656967eacf30716034",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "cache/taggable-cache": "^0.4.0",
-                "doctrine/instantiator": "^1.0.5",
-                "ext-bcmath": "*",
-                "ext-gmp": "*",
-                "ext-intl": "*",
-                "florianv/swap": "^3.0",
-                "leanphp/phpspec-code-coverage": "^3.0 || ^4.0",
-                "moneyphp/iso-currencies": "^3.0",
-                "php-http/message": "^1.4",
-                "php-http/mock-client": "^0.3.3",
-                "phpspec/phpspec": "^3.0",
-                "phpunit/phpunit": "^5",
-                "psr/cache": "^1.0",
-                "sllh/php-cs-fixer-styleci-bridge": "^2.1",
-                "symfony/phpunit-bridge": "^4"
-            },
-            "suggest": {
-                "ext-bcmath": "Calculate without integer limits",
-                "ext-gmp": "Calculate without integer limits",
-                "ext-intl": "Format Money objects with intl",
-                "florianv/swap": "Exchange rates library for PHP",
-                "psr/cache-implementation": "Used for Currency caching"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Money\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mathias Verraes",
-                    "email": "mathias@verraes.net",
-                    "homepage": "http://verraes.net"
-                },
-                {
-                    "name": "Frederik Bosch",
-                    "email": "f.bosch@genkgo.nl"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagi-kazar@gmail.com"
-                }
-            ],
-            "description": "PHP implementation of Fowler's Money pattern",
-            "homepage": "http://verraes.net/2011/04/fowler-money-pattern-in-php/",
-            "keywords": [
-                "Value Object",
-                "money",
-                "vo"
-            ],
-            "time": "2018-02-16T11:04:16+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3859,53 +3779,6 @@
             "time": "2018-05-21T13:25:35+00:00"
         },
         {
-            "name": "quickbooks/v3-php-sdk",
-            "version": "v5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/intuit/QuickBooks-V3-PHP-SDK.git",
-                "reference": "c69c8811e3dd824af8a00167ec0f1efaab813c1f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/intuit/QuickBooks-V3-PHP-SDK/zipball/c69c8811e3dd824af8a00167ec0f1efaab813c1f",
-                "reference": "c69c8811e3dd824af8a00167ec0f1efaab813c1f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "QuickBooksOnline\\API\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "hlu2",
-                    "email": "Hao_Lu@intuit.com"
-                }
-            ],
-            "description": "The Official PHP SDK for QuickBooks Online Accounting API",
-            "homepage": "http://developer.intuit.com",
-            "keywords": [
-                "api",
-                "http",
-                "quickbooks",
-                "rest",
-                "smallbusiness"
-            ],
-            "time": "2018-05-02T22:28:08+00:00"
-        },
-        {
             "name": "ramsey/uuid",
             "version": "3.7.3",
             "source": {
@@ -3984,53 +3857,6 @@
                 "uuid"
             ],
             "time": "2018-01-20T00:28:24+00:00"
-        },
-        {
-            "name": "scottlaurent/accounting",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scottlaurent/accounting.git",
-                "reference": "5cb070704fc89b79cdb56b06f1def8178e23dde3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scottlaurent/accounting/zipball/5cb070704fc89b79cdb56b06f1def8178e23dde3",
-                "reference": "5cb070704fc89b79cdb56b06f1def8178e23dde3",
-                "shasum": ""
-            },
-            "require": {
-                "moneyphp/money": "^3.0",
-                "ramsey/uuid": "^3.7"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.5",
-                "orchestra/database": "~3.4.0",
-                "orchestra/testbench": "~3.4.0",
-                "phpunit/phpunit": "^5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Scottlaurent\\Accounting\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Laurent",
-                    "email": "scott@baselineapplications.com"
-                }
-            ],
-            "description": "Laravel Accounting Journals for Eloquent Models",
-            "keywords": [
-                "Accounting",
-                "laravel"
-            ],
-            "time": "2017-11-30T01:42:22+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -7646,7 +7472,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "scottlaurent/accounting": 20,
         "laracasts/generators": 20
     },
     "prefer-stable": true,
