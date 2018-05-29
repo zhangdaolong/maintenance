@@ -5,16 +5,16 @@ use LaravelEnso\StructureManager\app\Classes\StructureMigration;
 class CreateStructureForCalendar extends StructureMigration
 {
     protected $permissions = [
-        ['name' => 'calendar.index', 'description' => 'calendar index', 'type' => 0, 'default' => false],
-        ['name' => 'calendar.create', 'description' => 'Get create form  for calendar', 'type' => 0, 'default' => false],
-        ['name' => 'calendar.edit', 'description' => 'Get edit form for calendar', 'type' => 0, 'default' => false],
-        ['name' => 'calendar.update', 'description' => 'Update edited status', 'type' => 1, 'default' => false],
-        ['name' => 'calendar.store', 'description' => 'Store newly created status', 'type' => 1, 'default' => false],
-        ['name' => 'calendar.destroy', 'description' => 'Delete status', 'type' => 1, 'default' => false],
-        ['name' => 'calendar.initTable', 'description' => 'Init table for calendar', 'type' => 0, 'default' => false],
-        ['name' => 'calendar.getTableData', 'description' => 'Get table data for calendar', 'type' => 0, 'default' => false],
-        ['name' => 'calendar.exportExcel', 'description' => 'Export excel for calendar', 'type' => 0, 'default' => false],
-    ['name' => 'calendar.selectOptions', 'description' => 'Get calendar list for vue select', 'type' => 0, 'default' => false],
+        ['name' => 'calendar.index', 'description' => 'calendar index', 'type' => 0, 'is_default' => false],
+        ['name' => 'calendar.create', 'description' => 'Get create form  for calendar', 'type' => 0, 'is_default' => false],
+        ['name' => 'calendar.edit', 'description' => 'Get edit form for calendar', 'type' => 0, 'is_default' => false],
+        ['name' => 'calendar.update', 'description' => 'Update edited status', 'type' => 1, 'is_default' => false],
+        ['name' => 'calendar.store', 'description' => 'Store newly created status', 'type' => 1, 'is_default' => false],
+        ['name' => 'calendar.destroy', 'description' => 'Delete status', 'type' => 1, 'is_default' => false],
+        ['name' => 'calendar.initTable', 'description' => 'Init table for calendar', 'type' => 0, 'is_default' => false],
+        ['name' => 'calendar.getTableData', 'description' => 'Get table data for calendar', 'type' => 0, 'is_default' => false],
+        ['name' => 'calendar.exportExcel', 'description' => 'Export excel for calendar', 'type' => 0, 'is_default' => false],
+    ['name' => 'calendar.selectOptions', 'description' => 'Get calendar list for vue select', 'type' => 0, 'is_default' => false],
     ];
 
     protected $permissionGroup = [
@@ -22,6 +22,6 @@ class CreateStructureForCalendar extends StructureMigration
     ];
 
     protected $menu = [
-        'name' => 'Calendar', 'icon' => 'calendar', 'link' => 'calendar.index', 'order' => 999,  'has_children' => false,
+        'name' => 'Calendar', 'icon' => 'calendar', 'link' => 'calendar.index', 'order_index' => 999,  'has_children' => false,
     ];
 }
