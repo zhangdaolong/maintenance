@@ -11,7 +11,7 @@ services:
       - ./:/application:cached
 
   mysql:
-    image: mysql:5.7
+    image: mysql:5.7@sha256:81679f23e0ece3e50a7300050191272e5afbf5b66be9b60d2ee0e8b575b152e2
     ports:
       - "3306:3306"
     environment:
@@ -21,7 +21,7 @@ services:
       - ./storage/tmp/db:/var/lib/mysql:cached
 
   nginx:
-    image: nginx
+    image: nginx:latest@sha256:1f9c00b4c95ef931afa097823d902e7602aebc3ec5532e907e066978075ca3e0
     ports:
       - "80:80"
     volumes:
@@ -31,7 +31,7 @@ services:
       - cmms-server
 
   node:
-     image: node
+     image: node:latest@sha256:2cda73dd26369c2ec69130ddda6f83ff4980fd6fc8e73b5e670a7670d4c86ba0
      working_dir: /app
      ports:
        - "8080:8080"
