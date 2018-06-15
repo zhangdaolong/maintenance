@@ -1,6 +1,5 @@
 <template>
-    <card header
-        :title="config.title"
+    <card :title="config.title"
         :icon="icon"
         refresh
         @refresh="get"
@@ -73,6 +72,15 @@ export default {
     computed: {
         icon() {
             return this.icons[this.config.type];
+        },
+    },
+
+    watch: {
+        params: {
+            handler() {
+                this.get();
+            },
+            deep: true,
         },
     },
 

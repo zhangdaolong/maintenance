@@ -1,7 +1,10 @@
 <?php
 
 return [
-    'version' => '2.7.7',
+    'version' => '2.8.1',
+    'facebook' => 'https://facebook.com',
+    'googleplus' => 'https://plus.google.com',
+    'twitter' => 'https://twitter.com',
     'stateBuilder' => 'App\Classes\LocalState',
     'ownerModel' => 'App\Owner',
     'defaultRole' => 'admin',
@@ -13,6 +16,7 @@ return [
         'imports' => 'imports',
         'temp' => 'temp',
         'exports' => 'exports',
+        'howToVideos' => 'howToVideos',
     ],
     'ravenKey' => env('RAVEN_DSN', null),
     'cacheLifetime' => env('CACHE_LIFETIME', 60),

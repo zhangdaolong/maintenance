@@ -4,6 +4,10 @@
 @import './helpers';
 @import './app';
 
+[v-cloak] {
+    display: none;
+}
+
 .animated {
     animation-duration: .5s;
 }
@@ -22,6 +26,16 @@
 
     &[aria-expanded="true"] {
         transform: rotate(-180deg);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .columns.is-reverse-mobile {
+        flex-direction: column-reverse;
+        display: flex;
+        .column {
+            width: 100%; 
+        }
     }
 }
 

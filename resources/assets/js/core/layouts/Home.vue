@@ -12,7 +12,7 @@
                         {{ meta.quote }}
                     </div>
                     <button class="animated fadeInRightBig button is-outlined"
-                        @click="$bus.$emit('enter-app')">
+                        @click="hideHome()">
                         {{ __('Enter the application') }}
                     </button>
                 </div>
@@ -24,7 +24,7 @@
 
 <script>
 
-import { mapState } from 'vuex';
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 import Overlay from '../../components/enso/bulma/Overlay.vue';
 
 export default {
@@ -41,28 +41,46 @@ export default {
     computed: {
         ...mapState(['meta']),
         ...mapState(['isInitialised', 'showQuote']),
+        ...mapState('auth', ['isAuth', 'lastRoute']),
+        ...mapGetters('localisation', ['documentTitle']),
     },
 
     watch: {
         isInitialised() {
-            this.enterApp();
+            if (this.isInitialised) {
+                this.enterApp();
+            }
         },
     },
 
+    created() {
+        this.initialise();
+    },
+
     methods: {
+        ...mapMutations('layout', ['hideHome']),
+        ...mapMutations('auth', ['setLastRoute']),
+        ...mapActions(['initialise']),
+        ...mapActions('layout', ['setTheme']),
         enterApp() {
-            if (!this.isInitialised) {
+            this.route();
+            this.loading = false;
+
+            if (!this.showQuote) {
+                document.title = this.documentTitle(this.$route.meta.title);
+                this.hideHome();
+            }
+        },
+        route() {
+            if (this.lastRoute) {
+                this.$router.push({ name: this.lastRoute.name });
+                this.setLastRoute(null);
                 return;
             }
 
-            if (this.showQuote) {
-                setTimeout(() => {
-                    this.loading = false;
-                }, 200);
-                return;
+            if (this.$route.meta.guestGuard) {
+                this.$router.push({ path: '/' });
             }
-
-            this.$bus.$emit('enter-app');
         },
     },
 };

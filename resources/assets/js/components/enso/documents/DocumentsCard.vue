@@ -16,7 +16,7 @@
         :badge="count"
         :controls="1">
         <card-control slot="control-1">
-            <file-uploader
+            <file-uploader :params="{ documentable_type: type, documentable_id: id }"
                 @upload-successful="$refs.documents.get();"
                 :url="uploadLink"
                 multiple/>
@@ -81,7 +81,7 @@ export default {
             return this.count === 0;
         },
         uploadLink() {
-            return route('core.documents.store', [this.type, this.id]);
+            return route('core.documents.store');
         },
         icon() {
             return faCopy;
