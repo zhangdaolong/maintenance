@@ -22,7 +22,7 @@ No documentation for CMMS currently produced.
 
 ### Installation
 
-1. Download the project with `composer create-project modularsoftware/genealogy`
+1. Download the project with `composer create-project modularsoftware/maintenance`
 
 2. Configure the `.env` file. 
 
@@ -49,7 +49,7 @@ Special thanks to [Laravel Enso](https://github.com/laravel-enso)  [Taylor Otwel
 
 ## Reporting bugs
 
-If you've stumbled across a bug, please help us out by [reporting the bug](https://github.com/modularsoftware/genealogy/issues?state=open) you have found. Simply log in or register and submit a new issue, leaving as much information about the bug as possible, e.g.
+If you've stumbled across a bug, please help us out by [reporting the bug](https://github.com/modularsoftware/maintenance/issues?state=open) you have found. Simply log in or register and submit a new issue, leaving as much information about the bug as possible, e.g.
 
 * Steps to reproduce
 * Expected result
