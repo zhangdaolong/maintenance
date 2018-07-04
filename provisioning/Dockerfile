@@ -1,4 +1,4 @@
-FROM php:7.2-fpm@sha256:d3737024f2c52d6929f8650abe88b66d5b905793483a1122f93210304c987047
+FROM php:7.2-fpm@sha256:27f22b2051ee3f735bea36b295095cdd5a50f12668897676e8c2407692f9b806
 LABEL maintainer="curtis@delicata.me.uk"
 
 # Installing dependencies
