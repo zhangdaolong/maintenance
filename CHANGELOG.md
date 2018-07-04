@@ -1,5 +1,56 @@
 ## Laravel Enso's Changelog
 
+### 2.8.5
+
+- brings back the `webpack.mix.js` file
+- fixes a bug in vuedatatable when saved start position is > total filtered
+
+### 2.8.4
+
+#### Core
+- refactors the FE menu initialisation
+- fixes a bug when toggling menu visibility for touch devices
+
+#### Charts
+- add support for vertical labels & removes skipping labels
+- fully reactive when datasets / labels change, including in structure
+
+#### VueDatatable
+- adds auth()->onceUsingId() for export jobs, useful for authorization
+- fixes the `align` attribute for hidden columns in responsive mode
+
+#### General
+- updates composer and npm dependencies
+
+### 2.8.3
+
+- adds `align` attribute for columns in vuedatatable templates
+- removes the old alignment functionality from the FE
+- removes the deprecated `customRender` function prop in favour of `slot` || `class`
+
+### 2.8.2
+
+#### Improvements
+
+- upgrades composer and npm dependencies
+
+#### Core
+- adds jessenger/date as a requirement
+- adds `showQuote` flag to `config/enso/config.php` which allows disabling the qoute from the home page
+- after password reset the user is redirected to the login page
+
+#### Localisation
+- integrates jessenger/date with the `SetLanguage` middleware.
+
+#### Vuedatatable
+- adds a `request()` getter in table builders classes
+- adds a `class` option for columns in template
+- make the `loading` boolean flag available in scoped slots
+- fixes a bug when exporting with rogue columns
+
+#### Formbuilder
+- adds `Number` to vueswitch's `value` type
+
 ### 2.8.1
 - fixes a routing problem for the login page.
 - updates packages

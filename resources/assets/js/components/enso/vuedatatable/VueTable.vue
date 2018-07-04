@@ -28,7 +28,6 @@
                     :body="body"
                     :start="start"
                     :i18n="i18n"
-                    :custom-render="customRender"
                     :expanded="expanded"
                     @ajax="ajax"
                     v-if="hasContent">
@@ -38,7 +37,8 @@
                         slot-scope="{ row, column }">
                         <slot :name="column.name"
                             :column="column"
-                            :row="row">
+                            :row="row"
+                            :loading="loading">
                             {{ row[column.name] }}
                         </slot>
                     </template>
@@ -121,10 +121,6 @@ export default {
             type: Object,
             default: null,
         },
-        customRender: {
-            type: Function,
-            default: (row, column) => row[column.name],
-        },
         i18n: {
             type: Function,
             default(key) {
@@ -167,16 +163,16 @@ export default {
                 template: {
                     sort: this.template.sort,
                     style: this.template.style,
-                    align: this.template.align,
                 },
-                columns: this.template.columns.reduce((collector, column) => {
-                    collector.push({
-                        sort: column.meta.sort,
-                        visible: column.meta.visible,
-                    });
+                columns: this.template.columns
+                    .reduce((collector, column) => {
+                        collector.push({
+                            sort: column.meta.sort,
+                            visible: column.meta.visible,
+                        });
 
-                    return collector;
-                }, []),
+                        return collector;
+                    }, []),
             };
         },
         hasContent() {
@@ -314,7 +310,8 @@ export default {
                 this.forceInfo = false;
 
                 if (data.data.length === 0 && this.start > 0) {
-                    this.start -= this.length;
+                    this.start = 0;
+                    this.getData();
                     return;
                 }
 

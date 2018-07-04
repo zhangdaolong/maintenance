@@ -18,7 +18,13 @@
                 </span>
             </div>
         </td>
-        <td :class="column.money ? 'is-money' : template.align"
+        <td :class="[
+                column.class,
+                { 'is-money' : column.money },
+                column.align
+                    ? template.aligns[column.align]
+                    : template.align
+            ]"
             v-for="(column, idx) in template.columns"
             :key="idx"
             v-if="
@@ -38,9 +44,6 @@
                         <fa :icon="isExpanded(row) ? 'minus-square' : 'plus-square'"/>
                     </span>
                 </span>
-                <span slot="custom-render"
-                    v-if="column.meta.render"
-                    v-html="customRender(row, column)"/>
                 <span :slot="column.name"
                     v-if="column.meta.slot">
                     <slot :name="column.name"
@@ -78,9 +81,6 @@
                         :column="item.column"
                         :value="item.value"
                         @clicked="clicked(body.data[item.index], item.column)">
-                        <span slot="custom-render"
-                            v-if="item.column.meta.render"
-                            v-html="customRender(body.data[item.index], item.column)"/>
                         <span :slot="item.column.name"
                             v-if="item.column.meta.slot">
                             <slot :name="item.column.name"
@@ -129,10 +129,6 @@ export default {
             required: true,
         },
         i18n: {
-            type: Function,
-            required: true,
-        },
-        customRender: {
             type: Function,
             required: true,
         },
@@ -317,7 +313,6 @@ li.child-row {
 
 .is-money {
     white-space: pre;
-    text-align: right;
     font-family: monospace;
 }
 
