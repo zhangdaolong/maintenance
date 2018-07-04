@@ -6,9 +6,9 @@
 
 &nbsp;
 [![StyleCI](https://github.styleci.io/repos/133564056/shield?branch=master)](https://github.styleci.io/repos/133564056)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/curtisdelicata/cmms/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/build.png?b=master)](https://scrutinizer-ci.com/g/curtisdelicata/cmms/build-status/master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/curtisdelicata/cmms/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/modularsoftware/maintenance/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/modularsoftware/maintenance/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/modularsoftware/maintenance/badges/build.png?b=master)](https://scrutinizer-ci.com/g/modularsoftware/maintenance/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/modularsoftware/maintenance/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 ### Important
 
@@ -30,7 +30,7 @@ and logging in with `admin@laravel-enso.com` and `password`.
 
 ### Installation Steps
 
-1. Download the project with `git clone https://github.com/curtisdelicata/cmms.git`
+1. Download the project with `git clone https://github.com/modularsoftware/maintenance.git`
 
 2. Run in the project folder `composer install`
 
