@@ -21,8 +21,8 @@ class CreateInvoicesTable extends Migration
             $table->dateTime('invoiced_date')->nullable();
             $table->dateTime('due_date')->nullable();
             $table->dateTime('payment_date')->nullable();
-            $table->integer('status_id')->unsigned()->index('work_orders_status_id_foreign');
-            $table->integer('customer_id')->unsigned()->nullable()->index('work_orders_customer_id_foreign');
+            $table->integer('status_id')->unsigned()->index('invoices_status_id_foreign');
+            $table->integer('customer_id')->unsigned()->nullable()->index('invoices_customer_id_foreign');
             $table->integer('is_active');
         });
     }
