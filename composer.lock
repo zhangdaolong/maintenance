@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88dcce68e534679f9f7e7cca801c80ec",
+    "content-hash": "b263791677f97a1a18e4830e30965203",
     "packages": [
         {
             "name": "box/spout",
