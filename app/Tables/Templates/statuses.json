@@ -1,7 +1,6 @@
 {
     "routePrefix": "statuses",
     "readSuffix": "getTableData",
-    "writeSuffix": null,
     "name": "Statuses",
     "icon": "statuses",
     "crtNo": true,

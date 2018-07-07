@@ -1,7 +1,6 @@
 {
   "routePrefix": "invoices",
   "readSuffix": "getTableData",
-  "writeSuffix": null,
   "name": "Invoices",
   "icon": "list-alt",
   "crtNo": true,

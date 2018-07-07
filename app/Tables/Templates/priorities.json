@@ -1,7 +1,6 @@
 {
     "routePrefix": "priorities",
     "readSuffix": "getTableData",
-    "writeSuffix": null,
     "name": "Priorities",
     "icon": "priorities",
     "crtNo": true,

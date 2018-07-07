@@ -1,7 +1,6 @@
 {
     "routePrefix": "workorders",
     "readSuffix": "getTableData",
-    "writeSuffix": null,
     "name": "Work Orders",
     "icon": ["fab", "vuejs"],
     "crtNo": true,

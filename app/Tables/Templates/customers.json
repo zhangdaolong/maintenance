@@ -1,7 +1,6 @@
 {
     "routePrefix": "customers",
     "readSuffix": "getTableData",
-    "writeSuffix": null,
     "name": "Customers",
     "icon": "customers",
     "crtNo": true,
